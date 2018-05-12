@@ -45,7 +45,7 @@ A FILE argument that does not exist is created empty, unless -c or -h is supplie
 ```
 
 ## explainshell.com
-  除了以上命令,我们还可以在 explainshell.com 进行命令功能的查询  
+  除了利用命令,我们还可以在 [explainshell.com](explainshell.com) 进行命令功能的查询  
   
   例 echo '1' > 1.txt 创建一个内容为字符串1,名字为1.txt的文件
   ![explainshell](https://raw.githubusercontent.com/YangYan-WH/MyBlog_SourceCode/master/pics/myBlog_pics/explainshell_1.png)
