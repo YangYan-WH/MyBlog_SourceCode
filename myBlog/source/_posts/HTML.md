@@ -13,7 +13,7 @@ tags:
 5. 元素（element）—— 开始标记+结束标记+内容 = 元素  
 
 **常用标签简介**  
-- ``<html><head></head><body><body></html>``  HTML文档基本结构标签  
+- ``<html><head></head><body></body></html>``  HTML文档基本结构标签  
 
 - ``<style></style> <link rel="stylesheet" type="text/css" href="theme.css" />``样式标签，前者是内部样式，后者是外部样式且属于空标签  
 
