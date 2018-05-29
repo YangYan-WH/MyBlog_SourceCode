@@ -24,9 +24,13 @@ tags:
     }
     .left{
         float:left;
+        width:50%;
+        background-color:red;
     }
     .right{
         float:right;
+        width:50%;
+        background-color:green;
     }
     ```
 2. **利用绝对定位**  
@@ -45,9 +49,46 @@ tags:
     }
     .left{
         position:absolute;
+        width:50%;
         left:0;
+        background-color:red;
     }
     .right{
         position:absolute;
+        width:50%;
         right:0;
+        background-color:green;
     }
+    ```
+3. **利用行内块元素**  
+
+    html
+    ```
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    ```
+    css
+    ```
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .left{
+        display:inline-block;  <!-- 中间会有间隙,我们用负margin清除间隙-->
+        width:50%;
+        margin-right: -6px;
+        background-color:red;
+        vertical-align: top;
+    }
+    .right{
+        display:inline-block;
+        width:50%;
+        margin-right: -6px;
+        background-color:green;
+        vertical-align: top;
+    }
+    ```  
+
+## 左中右布局
