@@ -3,7 +3,7 @@ title: JS里的数据类型
 date: 2018-06-20 19:23:13
 tags:
 ---
-## JS里的数据类型  
+## 数据类型  
   Javascript共有7种数据类型  
 1. **数字 number ** 
     0b二进制  011八进制  0x十六进制  
@@ -46,8 +46,8 @@ tags:
     ```
     *注意*  
     *JS有两个bug*  
-        - *typeof null 为object*
-        - *typeof function 为function*  
+    - *typeof null 为object*
+    - *typeof function 为function*  
 
 
 ## 数据类型转换  
@@ -73,7 +73,7 @@ tags:
 
 2. 转换为布尔值  
     - 常见两种转换方式Boolean() , !!true  
-    - *通常我们使用!!()来进行字符串转换*
+    *通常我们使用!!()来进行字符串转换*
     - 需要注意的只有5个特殊值的布尔值是false  
         0 , NaN , '' , null , undefined  
 
@@ -84,4 +84,14 @@ tags:
     - '1' - 0 ===1
     - +'1' === 1
     - parseInt('s') // 字符串转化为数字为NaN
-    - parseInt('1s') // 1 ,取字符串前面的数字
+    - parseInt('1s') // 1 ,取字符串前面的数字  
+
+## 普通类型和对象的区别  
+  
+- 普通类型包含数值、字符串、布尔值以及特殊值undefined/null  
+对象是复杂的数据类型,包含hash表、数组array和函数function
+
+- JavaScript由三种方法确定数据的类型
+    > typeof 运算符  
+    > instanceof 运算符  
+    > Object.prototype.toString 方法 
