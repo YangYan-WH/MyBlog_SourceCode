@@ -89,9 +89,15 @@ tags:
 ## 普通类型和对象的区别  
   
 - 普通类型包含数值、字符串、布尔值以及特殊值undefined/null  
-对象是复杂的数据类型,包含hash表、数组array和函数function
+- 对象是复杂的数据类型,包含hash表、数组array和函数function  
+- JS内存分为Stack栈内存和Heap堆内存,简单数据类型的数据直接存到Stack内存里,复杂类型的数据是把Heap地址放到Stack里
 
 - JavaScript由三种方法确定数据的类型
     > typeof 运算符  
     > instanceof 运算符  
-    > Object.prototype.toString 方法 
+    > Object.prototype.toString 方法  
+
+
+## 垃圾回收
+- 如果一个对象没有被引用，该对象就属于垃圾将被回收
+- 内存泄漏是该被标记为垃圾的对象没有被标记，且内存永久被占用，直到关闭整个浏览器，解决方式是将所有事件，全部设为null
