@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: YangYan's Front-end Notes
+title: Hexo
 subtitle:
 description:
 keywords:
-author: Yang Yan
-language: zh-Hans
+author: John Doe
+language:
 timezone:
 
 # URL
@@ -73,10 +73,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:YangYan-WH/YangYan-Wh.github.io.git
+  type:
